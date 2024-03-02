@@ -18,7 +18,7 @@
 			<!-- <hr class="border-2 border-indigo-300 w-1/2" /> -->
 		</div>
 	</div>
-	<div class="grid justify-items-center w-full px-8 w-11/12 md:w-8/12 h-min">
+	<div class="grid justify-items-center w-full px-8 w-11/12 lg:w-8/12 h-min">
 		<Cards />
 	</div>
 </section>

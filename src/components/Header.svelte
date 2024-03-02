@@ -20,10 +20,10 @@
 	<div class="md:gap-10 hidden md:flex">
 		{#each tabs as tab, index}
 			<span
-				class="hover:text-indigo-300 group transition-all duration-300 ease-in-out cursor-pointer text-secondary text-lg"
+				class="hover:text-secondary group transition-all duration-300 ease-in-out cursor-pointer text-secondary text-lg"
 			>
 				<p
-					class="mx-3 bg-left-bottom bg-gradient-to-r from-indigo-300 to-indigo-300 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-600 ease-out"
+					class="mx-3 bg-left-bottom bg-gradient-to-r from-border to-border bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-600 ease-out"
 				>
 					{tab.name}
 				</p>
