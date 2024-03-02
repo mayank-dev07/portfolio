@@ -29,7 +29,7 @@
 </script>
 
 <main class="flex flex-1 flex-col justify-center items-center tracking-wider gap-10">
-	<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 min-h-[calc(100vh-80px)] px-6 mt-[80px]">
+	<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-[calc(100vh-80px)] px-6 mt-[80px]">
 		<div class="flex flex-col justify-center text-center gap-4 font-semi-bold">
 			<div class="text-3xl md:text-5xl gap-3 flex flex-col">
 				<div>
