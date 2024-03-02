@@ -6,6 +6,16 @@
 	import { particlesInit } from '@tsparticles/svelte';
 	import { onMount } from 'svelte';
 	import { loadSlim } from '@tsparticles/slim';
+	import Main from '../components/Main.svelte';
+
+	let sections = [
+		{ name: 'Home', link: '#project', id: 'home' },
+		{ name: 'Skills', link: '#about', id: 'skills' },
+		{ name: 'Projects', link: '#project', id: 'projects' },
+		{ name: 'About', link: '#about', id: 'about' }
+	];
+
+	let activeSectionId = sections[0].id;
 
 	let ParticlesComponent;
 
@@ -45,10 +55,10 @@
 
 <div class="w-full flex flex-col bg-primary">
 	<div class="z-50">
-		<Header {y} />
+		<Header {y} {sections} bind:activeSection={activeSectionId} />
 	</div>
 	<div class="h-full z-20">
-		<slot />
+		<Main {sections} {activeSectionId} />
 	</div>
 	<Footer />
 </div>
