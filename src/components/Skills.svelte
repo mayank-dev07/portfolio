@@ -6,7 +6,7 @@
 	<div
 		class="bg-gradient-to-r from-secondary-left to-indigo-700 text-transparent bg-clip-text text-5xl uppercase"
 	>
-		<span>&lt;&nbsp;</span> Skills <span>&nbsp;/&gt;</span>
+		<span>&lt;&nbsp;&nbsp;Skills&nbsp;&nbsp;/&gt;</span>
 	</div>
 
 	<div class="text-center w-11/12 md:w-6/12 py-8">

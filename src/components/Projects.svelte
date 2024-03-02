@@ -11,7 +11,7 @@
 			<span
 				class="bg-gradient-to-r from-secondary-left to-indigo-700 text-transparent bg-clip-text text-5xl uppercase"
 			>
-				<span> &lt;&nbsp;</span> Projects <span>&nbsp;/&gt;</span>
+				<span> &lt;&nbsp;&nbsp;Projects&nbsp;&nbsp;/&gt;</span>
 			</span>
 		</div>
 		<div class="w-full grid justify-items-start py-6">
