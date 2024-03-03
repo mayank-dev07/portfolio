@@ -29,6 +29,8 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@threlte/core": "^7.2.0",
+		"@threlte/extras": "^8.9.0",
 		"@tsparticles/slim": "^3.3.0",
 		"@tsparticles/svelte": "^3.0.0",
 		"svelte-inview": "^4.0.2",

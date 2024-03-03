@@ -2,7 +2,8 @@
 	import '../app.css';
 	import Footer from '../components/Footer.svelte';
 	import Header from '../components/Header.svelte';
-
+	import { Canvas } from '@threlte/core';
+	import Scene from '../components/Scene.svelte';
 	import { particlesInit } from '@tsparticles/svelte';
 	import { onMount } from 'svelte';
 	import { loadSlim } from '@tsparticles/slim';
@@ -55,10 +56,15 @@
 <svelte:component this={ParticlesComponent} id="tsparticles" options={particlesConfig} />
 
 <div class="w-full flex flex-col bg-primary">
+	<!-- <div class=" fixed z-[-150] !w-screen"> -->
+	<!-- </div> -->
 	<div class="z-50">
 		<Header {y} {sections} bind:activeSection={activeSectionId} />
 	</div>
 	<div class="h-full z-20">
+		<!-- <Canvas>
+			<Scene />
+		</Canvas> -->
 		<Main {sections} {activeSectionId} />
 	</div>
 	<Footer />
