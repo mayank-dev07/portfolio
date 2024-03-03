@@ -65,6 +65,7 @@
 		<!-- <Canvas>
 			<Scene />
 		</Canvas> -->
+		<slot />
 		<Main {sections} {activeSectionId} />
 	</div>
 	<Footer />
