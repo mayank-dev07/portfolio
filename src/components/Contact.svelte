@@ -1,4 +1,45 @@
 <script>
+	let data = {
+		firstname: '',
+		lastname: '',
+		email: '',
+		description: '',
+		phone: ''
+	};
+
+	let connect = [];
+	let email = true;
+	let phone = true;
+
+	const handleSubmit = () => {
+		let set = JSON.stringify(data);
+		connect.push(set);
+		let validNumber = /^[6-9][0-9]{9}$/;
+		let validEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
+
+		if (!validEmail.test(data.email)) {
+			email = false;
+		} else if (!validNumber.test(data.phone)) {
+			phone = false;
+		} else {
+			if (validNumber.test(data.phone) && validEmail.test(data.email)) {
+				phone = true;
+				email = true;
+				localStorage.setItem('connect', [...connect]);
+				data = {
+					firstname: '',
+					lastname: '',
+					email: '',
+					description: ''
+				};
+			}
+		}
+	};
+
+	const handleInput = (e) => {
+		data = { ...data, [e.target.id]: e.target.value };
+		console.log(data);
+	};
 </script>
 
 <section
@@ -10,7 +51,7 @@
 		<span>&lt;&nbsp;&nbsp;Contact Me&nbsp;&nbsp;/&gt;</span>
 	</div>
 	<div class="flex flex-col md:flex-row justify-center items-center gap-20 w-full py-16 md:py-20">
-		<form class="flex flex-col w-full justify-evenly items-center gap-5">
+		<form class="flex flex-col w-full justify-evenly items-center gap-5" on:submit={handleSubmit}>
 			<div class="w-full lg:w-9/12 text-lg text-primary-button flex flex-col md:flex-row gap-5">
 				<div class="md:w-1/2">
 					<label class="px-2" for="firstname">Firstname</label>
@@ -19,6 +60,8 @@
 						type="text"
 						id="firstname"
 						class="px-4 rounded-lg py-1.5 text-white bg-slate-600 w-full focus:!outline-0"
+						on:input={handleInput}
+						bind:value={data.firstname}
 					/>
 				</div>
 				<div class="md:w-1/2">
@@ -28,6 +71,8 @@
 						type="text"
 						id="lastname"
 						class="px-4 rounded-lg py-1.5 text-white bg-slate-600 w-full focus:!outline-0"
+						on:input={handleInput}
+						bind:value={data.lastname}
 					/>
 				</div>
 			</div>
@@ -39,7 +84,12 @@
 						type="email"
 						id="email"
 						class="px-4 rounded-lg py-1.5 text-white bg-slate-600 w-full focus:!outline-0"
+						on:input={handleInput}
+						bind:value={data.email}
 					/>
+					{#if !email}
+						<span class="text-red-700 px-2">Enter valid email!</span>
+					{/if}
 				</div>
 			</div>
 			<div class="w-full lg:w-9/12 text-lg text-primary-button flex gap-10">
@@ -48,10 +98,14 @@
 					<input
 						required
 						type="tel"
-						pattern="[6-9]{1}[0-9]{9}"
 						id="phone"
 						class="px-4 rounded-lg py-1.5 text-white bg-slate-600 w-full focus:!outline-0"
+						on:input={handleInput}
+						bind:value={data.phone}
 					/>
+					{#if !phone}
+						<span class="text-red-700 px-2">Enter valid phone no!</span>
+					{/if}
 				</div>
 			</div>
 			<div class="w-full lg:w-9/12 text-lg text-primary-button flex gap-10">
@@ -63,11 +117,14 @@
 						rows="3"
 						id="description"
 						class="px-4 rounded-lg py-1.5 text-white bg-slate-600 w-full focus:!outline-0"
+						on:input={handleInput}
+						bind:value={data.description}
 					/>
 				</div>
 			</div>
 
 			<button
+				type="submit"
 				class="w-4/12 border-[1px] rounded-lg border-border py-1.5 mt-4 text-xl text-green-400 hover:shadow-lg hover:shadow-shadow hover:scale-105"
 				>Connect</button
 			>
