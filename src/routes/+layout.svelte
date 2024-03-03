@@ -9,10 +9,11 @@
 	import Main from '../components/Main.svelte';
 
 	let sections = [
-		{ name: 'Home', link: '#project', id: 'home' },
-		{ name: 'Skills', link: '#about', id: 'skills' },
-		{ name: 'Projects', link: '#project', id: 'projects' },
-		{ name: 'About', link: '#about', id: 'about' }
+		{ name: 'Home', id: 'home' },
+		{ name: 'Skills', id: 'skills' },
+		{ name: 'Projects', id: 'projects' },
+		{ name: 'About', id: 'about' },
+		{ name: 'Contact', id: 'contact' }
 	];
 
 	let activeSectionId = sections[0].id;
@@ -38,7 +39,7 @@
 				enable: true
 			},
 			number: {
-				value: 100
+				value: 70
 			}
 		}
 	};

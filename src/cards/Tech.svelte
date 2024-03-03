@@ -1,4 +1,7 @@
 <script>
+	import Saos from 'saos';
+	import { flip } from 'svelte/animate';
+	import { quintOut } from 'svelte/easing';
 	let techs = [
 		{
 			name: 'Frontend',
@@ -23,6 +26,7 @@
 			<div class="w-full text-center py-10">
 				<p class="text-3xl font-semibold text-secondary">Technologies</p>
 			</div>
+
 			<div class="w-full flex flex-wrap justify-center items-center gap-2 md:gap-4">
 				{#each tech.tech as t}
 					<button
@@ -33,4 +37,20 @@
 			</div>
 		</div>
 	{/each}
+	<!-- </Saos> -->
 </section>
+
+<style>
+	/* @keyframes -global-slide-in-elliptic-top-fwd {
+		0% {
+			transform: translateY(-600px) rotateX(-30deg) scale(0);
+			transform-origin: 50% 100%;
+			opacity: 0;
+		}
+		100% {
+			transform: translateY(0) rotateX(0) scale(1);
+			transform-origin: 50% 1400px;
+			opacity: 1;
+		}
+	} */
+</style>

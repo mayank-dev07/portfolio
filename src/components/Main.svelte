@@ -4,6 +4,8 @@
 	import Skills from './Skills.svelte';
 
 	import { inview } from 'svelte-inview';
+	import About from './About.svelte';
+	import Contact from './Contact.svelte';
 	export let sections = [];
 
 	export let activeSection;
@@ -34,12 +36,12 @@
 	});
 </script>
 
-<main class="flex flex-1 flex-col justify-center items-center tracking-wider gap-10">
-	{#each sections as { name, id }}
+<main class="flex flex-1 flex-col justify-center items-center tracking-wider gap-10 w-full">
+	{#each sections as { id }}
 		<section {id} use:inview on:enter={() => handleEnter(id)}>
 			{#if id == 'home'}
 				<section
-					class="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-[calc(100vh-80px)] px-6 mt-[80px]"
+					class="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-[calc(100vh-80px)] px-6 mt-[80px] container"
 				>
 					<div class="flex flex-col justify-center text-center gap-4 font-semi-bold">
 						<div class="text-3xl md:text-5xl gap-3 flex flex-col">
@@ -76,6 +78,12 @@
 			{/if}
 			{#if id == 'projects'}
 				<Projects />
+			{/if}
+			{#if id == 'about'}
+				<About />
+			{/if}
+			{#if id == 'contact'}
+				<Contact />
 			{/if}
 		</section>
 	{/each}

@@ -14,14 +14,20 @@
 			name: 'Hall booking',
 			image: '/assests/hall.png',
 			about: `Hall booking is the website on which the admin can add the conference hall and edit them and the user can book the hall and also check the status of the booked hall that it's accepted or rejected `,
-			tech: ['React', 'Vite', 'TailwindCSS']
+			tech: ['React JS', 'Vite', 'TailwindCSS']
 		},
 		{
 			name: 'Party Module',
 			image: '/assests/Pms.jpeg',
 			about:
 				'In party module the use can apply for the party and also ask for the party to the rest of the user and can view all the data related to it on user dashboard',
-			tech: ['React', 'Ant Design', 'Ant Vision', 'TailwindCSS']
+			tech: ['React JS', 'Ant Design', 'Ant Vision', 'TailwindCSS']
+		},
+		{
+			name: 'Rann',
+			image: '/assests/rann.png',
+			about: 'Rann is our college sports fests in which multiple college compete with each others',
+			tech: ['Next JS', 'Ant Design', 'TailwindCSS']
 		}
 	];
 
@@ -32,6 +38,7 @@
 
 {#each projects as project, index}
 	<Saos
+		once={true}
 		animation={'from-left 1.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}
 		class="w-full flex justify-center items-center py-12 h-full "
 	>
@@ -51,10 +58,10 @@
 				class="ease absolute bottom-0 left-0 h-0 w-0 border-l-2 border-border transition-all duration-200 group-hover:h-full"
 			></span>
 			<div class="w-full flex flex-col md:flex-row justify-evenly items-center h-full gap-10 px-4">
-				<div class="lg:w-1/2">
+				<div class="md:w-1/2">
 					<img src={`${project.image}`} alt="" class="object-cntain w-full h-full" />
 				</div>
-				<div class="lg:w-1/2 flex flex-col">
+				<div class="md:w-1/2 flex flex-col">
 					<p class="text-3xl font-semibold pb-3 text-secondary">{project.name}</p>
 					<span class="text-secondary-text">
 						{project.about}
