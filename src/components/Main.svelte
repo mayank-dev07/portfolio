@@ -64,7 +64,7 @@
 							AngularJs),TailwindCSS , Bootstrap, Firebase/Firestore</span
 						>
 					</div>
-					<div class="!w-full !h-full hidden lg:flex items-center z-[-150]">
+					<div class="!w-full !h-full hidden lg:flex items-center z-[-1]">
 						<div
 							class="flex flex-col lg:justify-center text-center gap-8 !w-full !h-3/5 items-center"
 						>
