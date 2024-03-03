@@ -11,7 +11,8 @@
 	let email = true;
 	let phone = true;
 
-	const handleSubmit = () => {
+	const handleSubmit = (e) => {
+		e.preventDefault();
 		let set = JSON.stringify(data);
 		connect.push(set);
 		let validNumber = /^[6-9][0-9]{9}$/;
