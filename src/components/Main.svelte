@@ -36,14 +36,14 @@
 	});
 </script>
 
-<main class="flex flex-1 flex-col justify-center items-center tracking-wider gap-10 w-full">
+<main class="flex flex-1 flex-col justify-center items-center tracking-wider w-full">
 	{#each sections as { id }}
 		<section {id} use:inview on:enter={() => handleEnter(id)}>
 			{#if id == 'home'}
 				<section
-					class="grid grid-cols-1 lg:grid-cols-2 px-6 gap-12 min-h-[calc(100vh-80px)] mt-[80px]"
+					class="grid grid-cols-1 lg:grid-cols-2 px-6 gap-12 min-h-[calc(100vh-80px)] mt-[64px] lg:mt-[80px]"
 				>
-					<div class="flex flex-col justify-center text-center gap-4 font-semi-bold">
+					<div class="flex flex-col justify-center items-center text-center gap-4 font-semi-bold">
 						<div class="text-3xl md:text-5xl gap-3 flex flex-col">
 							<div>
 								<span>
