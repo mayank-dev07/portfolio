@@ -63,6 +63,8 @@
 							>My favourite tech includes Javascript (ReactJS, NextJs, SvelteJs and
 							AngularJs),TailwindCSS , Bootstrap, Firebase/Firestore</span
 						>
+
+						<!-- <button cl>connet with me</button> -->
 					</div>
 					<div class="!w-full !h-full hidden lg:flex items-center z-[-1]">
 						<div

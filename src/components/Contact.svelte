@@ -69,7 +69,7 @@
 
 			<button
 				class="w-4/12 border-[1px] rounded-lg border-border py-1.5 mt-4 text-xl text-green-400 hover:shadow-lg hover:shadow-shadow hover:scale-105"
-				>Hire</button
+				>Connect</button
 			>
 		</form>
 	</div>
