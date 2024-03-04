@@ -1,17 +1,17 @@
 <script>
 	import Icon from '@iconify/svelte';
+	import { onMount } from 'svelte';
 
 	export let sections = [];
 	export let activeSectionId;
+	export let activeSection;
 	export let y;
 
 	let drawerVisible = false;
-	let tabs = [
-		{ name: 'Home', link: '#project' },
-		{ name: 'Skills', link: '#about' },
-		{ name: 'Projects', link: '#project' },
-		{ name: 'About', link: '#about' }
-	];
+
+	onMount(() => {
+		console.log(activeSection);
+	});
 </script>
 
 <div
@@ -22,12 +22,12 @@
 	<div class="md:gap-10 hidden md:flex">
 		{#each sections as { name, id }}
 			<li type="none">
-				<a href={`#${id}`} class:active={activeSectionId === id}
-					><span
+				<a href={`#${id}`} class:active={activeSectionId === id}>
+					<span
 						class="hover:text-secondary group transition-all duration-300 ease-in-out cursor-pointer text-secondary text-lg"
 					>
 						<p
-							class="mx-3 bg-left-bottom bg-gradient-to-r from-border to-border bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-600 ease-out"
+							class={`mx-3 bg-left-bottom bg-gradient-to-r from-border to-border bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-600 ease-out`}
 						>
 							{name}
 						</p>

@@ -59,7 +59,7 @@
 	</div>
 	<div class="h-full z-20">
 		<slot />
-		<Main {sections} {activeSectionId} />
+		<Main {y} {sections} {activeSectionId} />
 	</div>
 	<Footer />
 </div>
