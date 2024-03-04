@@ -51,7 +51,7 @@
 	>
 		<span>&lt;&nbsp;&nbsp;Contact Me&nbsp;&nbsp;/&gt;</span>
 	</div>
-	<div class="flex flex-col md:flex-row justify-center items-center gap-20 w-full py-16 md:py-20">
+	<div class="flex flex-col md:flex-row justify-center items-center gap-20 w-full py-5 md:py-20">
 		<form class="flex flex-col w-full justify-evenly items-center gap-5" on:submit={handleSubmit}>
 			<div class="w-full lg:w-9/12 text-lg text-primary-button flex flex-col md:flex-row gap-5">
 				<div class="md:w-1/2">
@@ -126,7 +126,7 @@
 
 			<button
 				type="submit"
-				class="w-4/12 border-[1px] rounded-lg border-border py-1.5 mt-4 text-xl text-green-400 hover:shadow-lg hover:shadow-shadow hover:scale-105"
+				class="w-4/12 border-[1px] rounded-lg border-border py-1.5 mt-0 md:mt-4 text-xl text-green-400 hover:shadow-lg hover:shadow-shadow hover:scale-105"
 				>Connect</button
 			>
 		</form>
