@@ -29,10 +29,10 @@
 		>
 		<a href={`#contact`}>
 			<button
-				class="uppercase border-[1px] border-border px-4 py-2 rounded-full text-secondary mt-8"
+				class="uppercase border-[1px] border-border px-4 py-2 rounded-full text-secondary mt-8 hover:scale-110 hover:shadow-lg hover:shadow-shadow"
 				><div class="flex justify-center items-center gap-4">
 					<p>connect with me</p>
-					<Icon icon="mage:message-dots-round" class="text-2xl" />
+					<Icon icon="mage:message-dots-round" class="text-2xl hover:scale-150" />
 				</div></button
 			>
 		</a>
