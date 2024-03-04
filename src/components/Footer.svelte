@@ -3,10 +3,10 @@
 </script>
 
 <section
-	class="w-full h-16 border-t-[1px] border-border-bottom flex justify-center items-center z-40"
+	class="w-full h-20 md:h-16 border-t-[1px] border-border-bottom flex justify-center items-center z-40"
 >
 	<div
-		class="w-10/12 flex flex-col md:flex-row justify-center md:justify-between items-center gap-2 py-5"
+		class="w-10/12 flex flex-col md:flex-row justify-center md:justify-between items-center gap-2"
 	>
 		<div class="capitalize text-sm text-secondary-text">
 			@ made with love by <span class="text-border">&nbsp;&lt;&nbsp;mayank dev&nbsp;/&gt;</span>
