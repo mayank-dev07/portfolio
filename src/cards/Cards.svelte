@@ -21,7 +21,7 @@
 			image: '/assests/Pms.jpeg',
 			about:
 				'In party module the use can apply for the party and also ask for the party to the rest of the user and can view all the data related to it on user dashboard',
-			tech: ['React JS', 'Ant Design', 'Ant Vision', 'TailwindCSS']
+			tech: ['React JS', 'Ant Design', 'TailwindCSS']
 		},
 		{
 			name: 'Rann',
