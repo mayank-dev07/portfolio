@@ -1,4 +1,16 @@
 <script>
+	import { initializeApp } from 'firebase/app';
+	import { getDatabase, ref, set } from 'firebase/database';
+	import { firebaseConfig } from '../firebase/firebase';
+	import { onMount } from 'svelte';
+
+	const app = initializeApp(firebaseConfig);
+	const database = getDatabase(app);
+
+	onMount(() => {
+		console.log(database);
+	});
+
 	let data = {
 		firstname: '',
 		lastname: '',
@@ -11,9 +23,16 @@
 	let email = true;
 	let phone = true;
 
+	function writeUserData(data) {
+		const db = getDatabase();
+		set(ref(db, 'users/' + data.email), {
+			...data
+		});
+		console.log(data);
+	}
+
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		let set = JSON.stringify(data);
 		connect.push(set);
 		let validNumber = /^[6-9][0-9]{9}$/;
 		let validEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,4}$/;
@@ -26,7 +45,7 @@
 			if (validNumber.test(data.phone) && validEmail.test(data.email)) {
 				phone = true;
 				email = true;
-				localStorage.setItem('connect', [...connect]);
+				writeUserData(data);
 				data = {
 					firstname: '',
 					lastname: '',

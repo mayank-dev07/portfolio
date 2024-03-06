@@ -23,10 +23,10 @@
 			</div>
 		</div>
 
-		<span class="text-base md:text-lg md:mt-8 md:px-10 text-border"
-			>My favourite tech includes Javascript (ReactJS, NextJs, SvelteJs and AngularJs),TailwindCSS ,
-			Bootstrap, Firebase/Firestore</span
-		>
+		<span class="text-base md:text-lg md:mt-8 md:px-10 text-border">
+			My favourite tech includes Javascript (ReactJS, NextJs, SvelteJs and AngularJs),TailwindCSS ,
+			Bootstrap, Firebase/Firestore
+		</span>
 		<a href={`#contact`}>
 			<button
 				class="uppercase border-[1px] border-border px-4 py-2 rounded-full text-secondary mt-8 hover:scale-110 hover:shadow-lg hover:shadow-shadow"

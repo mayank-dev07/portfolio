@@ -33,6 +33,7 @@
 		"@threlte/extras": "^8.9.0",
 		"@tsparticles/slim": "^3.3.0",
 		"@tsparticles/svelte": "^3.0.0",
+		"firebase": "^10.8.1",
 		"svelte-inview": "^4.0.2",
 		"svelte-materialify": "^0.3.11",
 		"three": "^0.162.0"
