@@ -25,7 +25,7 @@
 
 	function writeUserData(data) {
 		const db = getDatabase();
-		set(ref(db, 'users/' + data.email), {
+		set(ref(db, 'users/' + data.firstname), {
 			...data
 		});
 		console.log(data);
