@@ -21,7 +21,7 @@
 				<p class="py-4 text-green-400">
 					Dynamic frontend developer skilled in React, Next.js, Svelte. Elevate projects.
 				</p>
-				<a href="/assests/resume.pdf" target="_blank">
+				<a href="/assests/mayank.pdf" target="_blank">
 					<button class="border-[1px] rounded-full px-6 py-2 border-border text-green-200">
 						<span class="text-lg">&lt;</span>&nbsp;RESUME&nbsp;/<span class="text-lg">&gt; </span>
 					</button>
