@@ -24,7 +24,7 @@
 		</div>
 
 		<span class="text-base md:text-lg md:mt-8 md:px-10 text-border">
-			My favourite tech includes Javascript (ReactJS, NextJs, SvelteJs and AngularJs),TailwindCSS ,
+			My favourite tech includes Javascript (ReactJS, NextJs, SvelteJs, AngularJs and NodeJs),TailwindCSS ,
 			Bootstrap, Firebase/Firestore
 		</span>
 		<a href={`#contact`}>
