@@ -39,7 +39,7 @@
 
 	<span class="text-3xl text-secondary hidden md:flex">&nbsp;/&gt;</span>
 
-	<button on:click={() => (drawerVisible = !drawerVisible)} class="md:hidden flex">
+	<button on:click={() => (drawerVisible = !drawerVisible)} class="md:hidden flex px-4">
 		<Icon icon="mdi:hamburger-menu" class="md:hidden flex text-secondary text-2xl" />
 	</button>
 

@@ -9,7 +9,7 @@
 	>
 		<span>&lt;&nbsp;&nbsp;About&nbsp;&nbsp;/&gt;</span>
 	</div>
-	<div class="flex flex-col md:flex-row justify-evenly items-center gap-10 container py-16 md:py-20 text-center md:text-start">
+	<div class="flex flex-col md:flex-row justify-evenly items-center gap-10 w-full py-16 md:py-20">
 		<div class="w-full lg:w-1/2 text-lg text-primary-button">
 			As a frontend developer proficient in React, Next.js, and Svelte, I bring a passion for
 			crafting engaging user experiences to every project. With a keen eye for design and a
@@ -17,7 +17,7 @@
 			interfaces.
 		</div>
 		<div class="w-full lg:w-1/2 flex justify-center lg:justify-end">
-			<div class="w-[400px] px-8 py-4 shadow-lg shadow-shadow rounded-2xl bg-slate-800">
+			<div class="w-full lg:w-1/2 px-8 py-4 shadow-lg shadow-shadow rounded-2xl bg-slate-800">
 				<p class="py-4 text-green-400">
 					Dynamic frontend developer skilled in React, Next.js, Svelte. Elevate projects.
 				</p>
