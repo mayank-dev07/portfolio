@@ -20,7 +20,7 @@
 		</p>
 	</div>
 
-	<div class="flex justify-items-center w-full px-4 md:px-12">
+	<div class="flex justify-items-center container px-4 ">
 		<Tech />
 	</div>
 </section>

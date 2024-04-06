@@ -4,14 +4,14 @@
 
 	export let sections = [];
 	export let activeSectionId;
-	export let activeSection;
+	// export let activeSection;
 	export let y;
 
 	let drawerVisible = false;
 
-	onMount(() => {
-		console.log(activeSection);
-	});
+	// onMount(() => {
+	// 	console.log(activeSection);
+	// });
 </script>
 
 <div

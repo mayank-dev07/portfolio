@@ -39,7 +39,7 @@
 {#each projects as project, index}
 	<Saos
 		once={true}
-		animation={'from-left 1.5s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}
+		animation={'from-left 1s cubic-bezier(0.35, 0.5, 0.65, 0.95) both'}
 		class="w-full flex justify-center items-center py-12 h-full "
 	>
 		<div

@@ -12,7 +12,7 @@
 			</span>
 		</div>
 	</div>
-	<div class="grid justify-items-center w-full px-8 w-11/12 lg:w-8/12 h-min">
+	<div class="grid justify-items-center w-full px-8 w-11/12 lg:w-8/12 ">
 		<Cards />
 	</div>
 </section>
