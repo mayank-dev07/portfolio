@@ -7,14 +7,14 @@
 			name: 'Frontend',
 			image:"/assests/frontend.webp",
 			about:
-				'I enjoy creating visually appealing and user-friendly interfaces, bringing ideas to life in the browser',
+				'I enjoy creating visually appealing and user-friendly interfaces.',
 			tech: ['ANGULAR JS', 'REACT JS', 'NEXT JS', 'SVELTE JS', 'TAILWIND CSS']
 		},
 		{
 			name: 'Backend',
 			image:"/assests/backend.webp",
 			about:
-				'I enjoy solving complex problems through robust and scalable server-side solutions ensuring efficiency and accuracy.',
+				'I enjoy solving complex problems through robust and scalable server-side solutions.',
 			tech: ['NODE JS', 'EXPRESS JS', 'MONGO DB']
 		},
 		{

@@ -28,7 +28,7 @@
 		set(ref(db, 'users/' + data.firstname), {
 			...data
 		});
-		console.log(data);
+		// console.log(data);
 	}
 
 	const handleSubmit = (e) => {
@@ -58,7 +58,6 @@
 
 	const handleInput = (e) => {
 		data = { ...data, [e.target.id]: e.target.value };
-		console.log(data);
 	};
 </script>
 

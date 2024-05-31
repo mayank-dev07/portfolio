@@ -13,10 +13,7 @@
 
 	<div class="text-center w-11/12 md:w-6/12 md:py-8">
 		<p class="text-base text-primary-text">
-			In this ever-evolving and dynamic landscape of work and technology, having a diverse skill set
-			is paramount. My journey has been marked by a commitment to continuous learning and the
-			cultivation of various competencies that allow me to thrive in diverse environments and
-			contribute meaningfully to projects.
+			 My journey has been marked by a commitment to continuous learning and growth.
 		</p>
 	</div>
 
